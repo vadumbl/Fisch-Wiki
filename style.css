@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #dceaf0;
+    color: #17202a;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+}
+
+.top-bar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+    background: #193c63;
+    border-bottom: 4px solid #74c8dc;
+}
+
+.logo {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px;
+    background: #eef7fa;
+    border-bottom: 2px solid #a9cbd6;
+}
+
+.main-nav a {
+    padding: 7px 12px;
+    border-radius: 5px;
+    color: #193c63;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background: #74c8dc;
+}
+
+main {
+    max-width: 1050px;
+    width: 92%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f7fbfc;
+    border: 2px solid #9bbac5;
+}
+
+.game-info {
+    float: right;
+    width: 260px;
+    margin: 0 0 15px 15px;
+    padding: 14px;
+    background: #dfeff4;
+    border: 2px solid #86abb9;
+}
+
+.game-info img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.game-info p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+h1,
+h2 {
+    color: #193c63;
+}
+
+h1,
+main > section > h2 {
+    padding-bottom: 7px;
+    border-bottom: 2px solid #74aabd;
+}
+
+.welcome-box {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    align-items: center;
+    gap: 15px;
+    padding: 22px;
+    background: #9ed2df;
+    border: 2px solid #193c63;
+}
+
+.welcome-box h2 {
+    margin: 4px 0;
+    font-size: 32px;
+}
+
+.eyebrow {
+    margin: 0;
+    color: #255272;
+    font-weight: bold;
+}
+
+.welcome-image {
+    width: 220px;
+    height: 170px;
+    object-fit: contain;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    border: 2px solid #193c63;
+    border-radius: 5px;
+    background: #ffd54a;
+    color: #17202a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-cards,
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.menu-cards {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.menu-card,
+.catalog-card {
+    overflow: hidden;
+    background: #edf5f7;
+    border: 2px solid #aec4cb;
+    text-decoration: none;
+}
+
+.menu-card {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.menu-card img,
+.catalog-card img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    padding: 8px;
+    object-fit: contain;
+    background: #dceaf0;
+}
+
+.menu-card h3,
+.catalog-card h3,
+.menu-card p,
+.catalog-card p {
+    margin: 8px 10px;
+}
+
+.menu-card h3,
+.catalog-card h3 {
+    color: #193c63;
+}
+
+.catalog-card {
+    min-height: 270px;
+}
+
+.tag {
+    display: inline-block;
+    margin: 8px 10px 0;
+    padding: 3px 8px;
+    border-radius: 12px;
+    background: #193c63;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.rarity-common {
+    background: #5d8d68;
+}
+
+.rarity-uncommon {
+    background: #368da1;
+}
+
+.rarity-rare {
+    background: #7555a6;
+}
+
+.rarity-legendary {
+    background: #b56c26;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 110px;
+    padding: 10px;
+    background: #edf5f7;
+    border: 2px solid #aec4cb;
+}
+
+.achievement img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    background: #dceaf0;
+}
+
+.achievement h3,
+.achievement p {
+    margin: 3px 0;
+}
+
+.game-essence {
+    margin-top: 20px;
+    padding: 15px;
+    background: #dfeff4;
+    border: 2px solid #86abb9;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background: #193c63;
+    color: #d6edf4;
+}
+
+footer p {
+    margin: 4px;
+}
+
+@media (max-width: 800px) {
+    main {
+        width: 95%;
+        padding: 14px;
+    }
+
+    .game-info {
+        float: none;
+        width: 100%;
+        margin: 0 0 12px;
+    }
+
+    .welcome-box {
+        grid-template-columns: 1fr 150px;
+    }
+
+    .welcome-image {
+        width: 150px;
+    }
+
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-cards,
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .main-nav {
+        flex-wrap: wrap;
+    }
+
+    .main-nav a {
+        width: 45%;
+        text-align: center;
+    }
+
+    .welcome-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .welcome-image {
+        margin: auto;
+    }
+
+    .catalog {
+        grid-template-columns: 1fr;
+    }
+}
